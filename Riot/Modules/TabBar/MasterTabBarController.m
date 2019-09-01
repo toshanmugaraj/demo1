@@ -80,7 +80,7 @@
     _favouritesViewController = self.viewControllers[TABBAR_FAVOURITES_INDEX];
     _peopleViewController = self.viewControllers[TABBAR_PEOPLE_INDEX];
     _roomsViewController = self.viewControllers[TABBAR_ROOMS_INDEX];
-    _groupsViewController = self.viewControllers[TABBAR_GROUPS_INDEX];
+//    _groupsViewController = self.viewControllers[TABBAR_GROUPS_INDEX];
     
     // Set the accessibility labels for all buttons #1842
     [_settingsBarButtonItem setAccessibilityLabel:NSLocalizedStringFromTable(@"settings_title", @"Vector", nil)];
@@ -89,10 +89,10 @@
     [_favouritesViewController setAccessibilityLabel:NSLocalizedStringFromTable(@"title_favourites", @"Vector", nil)];
     [_peopleViewController setAccessibilityLabel:NSLocalizedStringFromTable(@"title_people", @"Vector", nil)];
     [_roomsViewController setAccessibilityLabel:NSLocalizedStringFromTable(@"title_rooms", @"Vector", nil)];
-    [_groupsViewController setAccessibilityLabel:NSLocalizedStringFromTable(@"title_groups", @"Vector", nil)];
+//    [_groupsViewController setAccessibilityLabel:NSLocalizedStringFromTable(@"title_groups", @"Vector", nil)];
     
     // Sanity check
-    NSAssert(_homeViewController && _favouritesViewController && _peopleViewController && _roomsViewController && _groupsViewController, @"Something wrong in Main.storyboard");
+    NSAssert(_homeViewController && _favouritesViewController && _peopleViewController && _roomsViewController, @"Something wrong in Main.storyboard");
 
     // Adjust the display of the icons in the tabbar.
     for (UITabBarItem *tabBarItem in self.tabBar.items)

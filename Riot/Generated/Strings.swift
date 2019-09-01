@@ -74,7 +74,7 @@ internal enum VectorL10n {
   internal static var authForgotPassword: String { 
     return VectorL10n.tr("Vector", "auth_forgot_password") 
   }
-  /// No Identity Server is configured: add one to reset your password.
+  /// No identity server is configured: add one to reset your password.
   internal static var authForgotPasswordErrorNoConfiguredIdentityServer: String { 
     return VectorL10n.tr("Vector", "auth_forgot_password_error_no_configured_identity_server") 
   }
@@ -442,7 +442,7 @@ internal enum VectorL10n {
   internal static var deactivateAccountForgetMessagesInformationPart3: String { 
     return VectorL10n.tr("Vector", "deactivate_account_forget_messages_information_part3") 
   }
-  /// This will make your account permanently unusable. You will not be able to log in, and no one will be able to re-register the same user ID.  This will cause your account to leave all rooms it is participating in, and it will remove your account details from your identity server. 
+  /// This will make your account permanently unusable. You will not be able to log in, and no one will be able to re-register the same user ID.  This will cause your account to leave all groups it is participating in, and it will remove your account details from your identity server. 
   internal static var deactivateAccountInformationsPart1: String { 
     return VectorL10n.tr("Vector", "deactivate_account_informations_part1") 
   }
@@ -638,7 +638,7 @@ internal enum VectorL10n {
   internal static var deviceVerificationEmojiMoon: String { 
     return VectorL10n.tr("Vector", "device_verification_emoji_moon") 
   }
-  /// Mushroom
+  /// Mushgroup
   internal static var deviceVerificationEmojiMushroom: String { 
     return VectorL10n.tr("Vector", "device_verification_emoji_mushroom") 
   }
@@ -818,7 +818,7 @@ internal enum VectorL10n {
   internal static var deviceVerificationVerifyWaitPartner: String { 
     return VectorL10n.tr("Vector", "device_verification_verify_wait_partner") 
   }
-  /// %tu rooms
+  /// %tu groups
   internal static func directoryCellDescription(_ p1: Int) -> String {
     return VectorL10n.tr("Vector", "directory_cell_description", p1)
   }
@@ -846,11 +846,11 @@ internal enum VectorL10n {
   internal static var directorySearchingTitle: String { 
     return VectorL10n.tr("Vector", "directory_searching_title") 
   }
-  /// All native Matrix rooms
+  /// All native Matrix groups
   internal static var directoryServerAllNativeRooms: String { 
     return VectorL10n.tr("Vector", "directory_server_all_native_rooms") 
   }
-  /// All rooms on %@ server
+  /// All groups on %@ server
   internal static func directoryServerAllRooms(_ p1: String) -> String {
     return VectorL10n.tr("Vector", "directory_server_all_rooms", p1)
   }
@@ -862,7 +862,7 @@ internal enum VectorL10n {
   internal static var directoryServerPlaceholder: String { 
     return VectorL10n.tr("Vector", "directory_server_placeholder") 
   }
-  /// Type a homeserver to list public rooms from
+  /// Type a homeserver to list public groups from
   internal static var directoryServerTypeHomeserver: String { 
     return VectorL10n.tr("Vector", "directory_server_type_homeserver") 
   }
@@ -1026,7 +1026,7 @@ internal enum VectorL10n {
   internal static var groupDetailsPeople: String { 
     return VectorL10n.tr("Vector", "group_details_people") 
   }
-  /// Rooms
+  /// Groups
   internal static var groupDetailsRooms: String { 
     return VectorL10n.tr("Vector", "group_details_rooms") 
   }
@@ -1038,7 +1038,7 @@ internal enum VectorL10n {
   internal static func groupHomeMultiMembersFormat(_ p1: Int) -> String {
     return VectorL10n.tr("Vector", "group_home_multi_members_format", p1)
   }
-  /// %tu rooms
+  /// %tu groups
   internal static func groupHomeMultiRoomsFormat(_ p1: Int) -> String {
     return VectorL10n.tr("Vector", "group_home_multi_rooms_format", p1)
   }
@@ -1046,7 +1046,7 @@ internal enum VectorL10n {
   internal static var groupHomeOneMemberFormat: String { 
     return VectorL10n.tr("Vector", "group_home_one_member_format") 
   }
-  /// 1 room
+  /// 1 group
   internal static var groupHomeOneRoomFormat: String { 
     return VectorL10n.tr("Vector", "group_home_one_room_format") 
   }
@@ -1066,7 +1066,7 @@ internal enum VectorL10n {
   internal static var groupParticipantsFilterMembers: String { 
     return VectorL10n.tr("Vector", "group_participants_filter_members") 
   }
-  /// Search / invite by User ID or Name
+  /// User ID/Name/Email
   internal static var groupParticipantsInviteAnotherUser: String { 
     return VectorL10n.tr("Vector", "group_participants_invite_another_user") 
   }
@@ -1106,7 +1106,7 @@ internal enum VectorL10n {
   internal static var groupParticipantsRemovePromptTitle: String { 
     return VectorL10n.tr("Vector", "group_participants_remove_prompt_title") 
   }
-  /// Filter community rooms
+  /// Filter community groups
   internal static var groupRoomsFilterRooms: String { 
     return VectorL10n.tr("Vector", "group_rooms_filter_rooms") 
   }
@@ -1226,7 +1226,7 @@ internal enum VectorL10n {
   internal static var keyBackupSetupBannerTitle: String { 
     return VectorL10n.tr("Vector", "key_backup_setup_banner_title") 
   }
-  /// Messages in encrypted rooms are secured with end-to-end encryption. Only you and the recipient(s) have the keys to read these messages.\n\nSecurely back up your keys to avoid losing them.
+  /// Messages in encrypted groups are secured with end-to-end encryption. Only you and the recipient(s) have the keys to read these messages.\n\nSecurely back up your keys to avoid losing them.
   internal static var keyBackupSetupIntroInfo: String { 
     return VectorL10n.tr("Vector", "key_backup_setup_intro_info") 
   }
@@ -1422,7 +1422,7 @@ internal enum VectorL10n {
   internal static var preview: String { 
     return VectorL10n.tr("Vector", "preview") 
   }
-  /// Public Rooms (at %@):
+  /// Public Groups (at %@):
   internal static func publicRoomSectionTitle(_ p1: String) -> String {
     return VectorL10n.tr("Vector", "public_room_section_title", p1)
   }
@@ -1482,7 +1482,7 @@ internal enum VectorL10n {
   internal static var roomActionSendSticker: String { 
     return VectorL10n.tr("Vector", "room_action_send_sticker") 
   }
-  /// You need permission to manage conference call in this room
+  /// You need permission to manage conference call in this group
   internal static var roomConferenceCallNoPower: String { 
     return VectorL10n.tr("Vector", "room_conference_call_no_power") 
   }
@@ -1502,11 +1502,11 @@ internal enum VectorL10n {
   internal static var roomCreationAppearancePicture: String { 
     return VectorL10n.tr("Vector", "room_creation_appearance_picture") 
   }
-  /// No Identity Server is configured so you cannot add a participant with an email.
+  /// No identity server is configured so you cannot add a participant with an email.
   internal static var roomCreationErrorInviteUserByEmailWithoutIdentityServer: String { 
     return VectorL10n.tr("Vector", "room_creation_error_invite_user_by_email_without_identity_server") 
   }
-  /// Search / invite by User ID, Name or email
+  /// User ID/Name/Email
   internal static var roomCreationInviteAnotherUser: String { 
     return VectorL10n.tr("Vector", "room_creation_invite_another_user") 
   }
@@ -1546,7 +1546,7 @@ internal enum VectorL10n {
   internal static var roomCreationTitle: String { 
     return VectorL10n.tr("Vector", "room_creation_title") 
   }
-  /// A room is already being created. Please wait.
+  /// A group is already being created. Please wait.
   internal static var roomCreationWaitForCreation: String { 
     return VectorL10n.tr("Vector", "room_creation_wait_for_creation") 
   }
@@ -1554,19 +1554,19 @@ internal enum VectorL10n {
   internal static var roomDeleteUnsentMessages: String { 
     return VectorL10n.tr("Vector", "room_delete_unsent_messages") 
   }
-  /// Who can access this room?
+  /// Who can access this group?
   internal static var roomDetailsAccessSection: String { 
     return VectorL10n.tr("Vector", "room_details_access_section") 
   }
-  /// Anyone who knows the room's link, including guests
+  /// Anyone who knows the group's link, including guests
   internal static var roomDetailsAccessSectionAnyone: String { 
     return VectorL10n.tr("Vector", "room_details_access_section_anyone") 
   }
-  /// Anyone who knows the room's link, apart from guests
+  /// Anyone who knows the group's link, apart from guests
   internal static var roomDetailsAccessSectionAnyoneApartFromGuest: String { 
     return VectorL10n.tr("Vector", "room_details_access_section_anyone_apart_from_guest") 
   }
-  /// List this room in room directory
+  /// List this group in group directory
   internal static var roomDetailsAccessSectionDirectoryToggle: String { 
     return VectorL10n.tr("Vector", "room_details_access_section_directory_toggle") 
   }
@@ -1574,11 +1574,11 @@ internal enum VectorL10n {
   internal static var roomDetailsAccessSectionInvitedOnly: String { 
     return VectorL10n.tr("Vector", "room_details_access_section_invited_only") 
   }
-  /// To link to a room it must have an address
+  /// To link to a group it must have an address
   internal static var roomDetailsAccessSectionNoAddressWarning: String { 
     return VectorL10n.tr("Vector", "room_details_access_section_no_address_warning") 
   }
-  /// You will have no main address specified. The default main address for this room will be picked randomly
+  /// You will have no main address specified. The default main address for this group will be picked randomly
   internal static var roomDetailsAddressesDisableMainAddressPromptMsg: String { 
     return VectorL10n.tr("Vector", "room_details_addresses_disable_main_address_prompt_msg") 
   }
@@ -1602,11 +1602,11 @@ internal enum VectorL10n {
   internal static var roomDetailsAdvancedE2eEncryptionBlacklistUnverifiedDevices: String { 
     return VectorL10n.tr("Vector", "room_details_advanced_e2e_encryption_blacklist_unverified_devices") 
   }
-  /// Encryption is not enabled in this room.
+  /// Encryption is not enabled in this group.
   internal static var roomDetailsAdvancedE2eEncryptionDisabled: String { 
     return VectorL10n.tr("Vector", "room_details_advanced_e2e_encryption_disabled") 
   }
-  /// Encryption is enabled in this room
+  /// Encryption is enabled in this group
   internal static var roomDetailsAdvancedE2eEncryptionEnabled: String { 
     return VectorL10n.tr("Vector", "room_details_advanced_e2e_encryption_enabled") 
   }
@@ -1614,7 +1614,7 @@ internal enum VectorL10n {
   internal static var roomDetailsAdvancedEnableE2eEncryption: String { 
     return VectorL10n.tr("Vector", "room_details_advanced_enable_e2e_encryption") 
   }
-  /// Room ID:
+  /// Group ID:
   internal static var roomDetailsAdvancedRoomId: String { 
     return VectorL10n.tr("Vector", "room_details_advanced_room_id") 
   }
@@ -1626,15 +1626,15 @@ internal enum VectorL10n {
   internal static var roomDetailsBannedUsersSection: String { 
     return VectorL10n.tr("Vector", "room_details_banned_users_section") 
   }
-  /// Copy Room Address
+  /// Copy Group Address
   internal static var roomDetailsCopyRoomAddress: String { 
     return VectorL10n.tr("Vector", "room_details_copy_room_address") 
   }
-  /// Copy Room ID
+  /// Copy Group ID
   internal static var roomDetailsCopyRoomId: String { 
     return VectorL10n.tr("Vector", "room_details_copy_room_id") 
   }
-  /// Copy Room URL
+  /// Copy Group URL
   internal static var roomDetailsCopyRoomUrl: String { 
     return VectorL10n.tr("Vector", "room_details_copy_room_url") 
   }
@@ -1642,19 +1642,19 @@ internal enum VectorL10n {
   internal static var roomDetailsDirectChat: String { 
     return VectorL10n.tr("Vector", "room_details_direct_chat") 
   }
-  /// Fail to add the new room addresses
+  /// Fail to add the new group addresses
   internal static var roomDetailsFailToAddRoomAliases: String { 
     return VectorL10n.tr("Vector", "room_details_fail_to_add_room_aliases") 
   }
-  /// Fail to enable encryption in this room
+  /// Fail to enable encryption in this group
   internal static var roomDetailsFailToEnableEncryption: String { 
     return VectorL10n.tr("Vector", "room_details_fail_to_enable_encryption") 
   }
-  /// Fail to remove the room addresses
+  /// Fail to remove the group addresses
   internal static var roomDetailsFailToRemoveRoomAliases: String { 
     return VectorL10n.tr("Vector", "room_details_fail_to_remove_room_aliases") 
   }
-  /// Fail to update the room photo
+  /// Fail to update the group photo
   internal static var roomDetailsFailToUpdateAvatar: String { 
     return VectorL10n.tr("Vector", "room_details_fail_to_update_avatar") 
   }
@@ -1670,15 +1670,15 @@ internal enum VectorL10n {
   internal static var roomDetailsFailToUpdateRoomCommunities: String { 
     return VectorL10n.tr("Vector", "room_details_fail_to_update_room_communities") 
   }
-  /// Fail to update the direct flag of this room
+  /// Fail to update the direct flag of this group
   internal static var roomDetailsFailToUpdateRoomDirect: String { 
     return VectorL10n.tr("Vector", "room_details_fail_to_update_room_direct") 
   }
-  /// Fail to update the room directory visibility
+  /// Fail to update the group directory visibility
   internal static var roomDetailsFailToUpdateRoomDirectoryVisibility: String { 
     return VectorL10n.tr("Vector", "room_details_fail_to_update_room_directory_visibility") 
   }
-  /// Fail to update the room guest access
+  /// Fail to update the group guest access
   internal static var roomDetailsFailToUpdateRoomGuestAccess: String { 
     return VectorL10n.tr("Vector", "room_details_fail_to_update_room_guest_access") 
   }
@@ -1686,7 +1686,7 @@ internal enum VectorL10n {
   internal static var roomDetailsFailToUpdateRoomJoinRule: String { 
     return VectorL10n.tr("Vector", "room_details_fail_to_update_room_join_rule") 
   }
-  /// Fail to update the room name
+  /// Fail to update the group name
   internal static var roomDetailsFailToUpdateRoomName: String { 
     return VectorL10n.tr("Vector", "room_details_fail_to_update_room_name") 
   }
@@ -1734,7 +1734,7 @@ internal enum VectorL10n {
   internal static var roomDetailsHistorySectionMembersOnlySinceJoined: String { 
     return VectorL10n.tr("Vector", "room_details_history_section_members_only_since_joined") 
   }
-  /// Changes to who can read history will only apply to future messages in this room. The visibility of existing history will be unchanged.
+  /// Changes to who can read history will only apply to future messages in this group. The visibility of existing history will be unchanged.
   internal static var roomDetailsHistorySectionPromptMsg: String { 
     return VectorL10n.tr("Vector", "room_details_history_section_prompt_msg") 
   }
@@ -1762,7 +1762,7 @@ internal enum VectorL10n {
   internal static func roomDetailsNewFlairPlaceholder(_ p1: String) -> String {
     return VectorL10n.tr("Vector", "room_details_new_flair_placeholder", p1)
   }
-  /// This room has no local addresses
+  /// This group has no local addresses
   internal static var roomDetailsNoLocalAddresses: String { 
     return VectorL10n.tr("Vector", "room_details_no_local_addresses") 
   }
@@ -1770,11 +1770,11 @@ internal enum VectorL10n {
   internal static var roomDetailsPeople: String { 
     return VectorL10n.tr("Vector", "room_details_people") 
   }
-  /// Room Photo
+  /// Group Photo
   internal static var roomDetailsPhoto: String { 
     return VectorL10n.tr("Vector", "room_details_photo") 
   }
-  /// Room Name
+  /// Group Name
   internal static var roomDetailsRoomName: String { 
     return VectorL10n.tr("Vector", "room_details_room_name") 
   }
@@ -1790,7 +1790,7 @@ internal enum VectorL10n {
   internal static var roomDetailsSettings: String { 
     return VectorL10n.tr("Vector", "room_details_settings") 
   }
-  /// Room Details
+  /// Group Details
   internal static var roomDetailsTitle: String { 
     return VectorL10n.tr("Vector", "room_details_title") 
   }
@@ -1802,11 +1802,11 @@ internal enum VectorL10n {
   internal static var roomDetailsUnsetMainAddress: String { 
     return VectorL10n.tr("Vector", "room_details_unset_main_address") 
   }
-  /// No public rooms available
+  /// No public groups available
   internal static var roomDirectoryNoPublicRoom: String { 
     return VectorL10n.tr("Vector", "room_directory_no_public_room") 
   }
-  /// You do not have permission to post to this room
+  /// You do not have permission to post to this group
   internal static var roomDoNotHavePermissionToPost: String { 
     return VectorL10n.tr("Vector", "room_do_not_have_permission_to_post") 
   }
@@ -1974,7 +1974,7 @@ internal enum VectorL10n {
   internal static func roomOngoingConferenceCallWithClose(_ p1: String, _ p2: String, _ p3: String) -> String {
     return VectorL10n.tr("Vector", "room_ongoing_conference_call_with_close", p1, p2, p3)
   }
-  /// Ban from this room
+  /// Ban from this group
   internal static var roomParticipantsActionBan: String { 
     return VectorL10n.tr("Vector", "room_participants_action_ban") 
   }
@@ -1986,7 +1986,7 @@ internal enum VectorL10n {
   internal static var roomParticipantsActionInvite: String { 
     return VectorL10n.tr("Vector", "room_participants_action_invite") 
   }
-  /// Leave this room
+  /// Leave this group
   internal static var roomParticipantsActionLeave: String { 
     return VectorL10n.tr("Vector", "room_participants_action_leave") 
   }
@@ -1994,7 +1994,7 @@ internal enum VectorL10n {
   internal static var roomParticipantsActionMention: String { 
     return VectorL10n.tr("Vector", "room_participants_action_mention") 
   }
-  /// Remove from this room
+  /// Remove from this group
   internal static var roomParticipantsActionRemove: String { 
     return VectorL10n.tr("Vector", "room_participants_action_remove") 
   }
@@ -2054,7 +2054,7 @@ internal enum VectorL10n {
   internal static var roomParticipantsAgo: String { 
     return VectorL10n.tr("Vector", "room_participants_ago") 
   }
-  /// Filter room members
+  /// Filter group members
   internal static var roomParticipantsFilterRoomMembers: String { 
     return VectorL10n.tr("Vector", "room_participants_filter_room_members") 
   }
@@ -2062,7 +2062,7 @@ internal enum VectorL10n {
   internal static var roomParticipantsIdle: String { 
     return VectorL10n.tr("Vector", "room_participants_idle") 
   }
-  /// Search / invite by User ID, Name or email
+  /// User ID/Name/Email
   internal static var roomParticipantsInviteAnotherUser: String { 
     return VectorL10n.tr("Vector", "room_participants_invite_another_user") 
   }
@@ -2086,11 +2086,11 @@ internal enum VectorL10n {
   internal static var roomParticipantsInvitedSection: String { 
     return VectorL10n.tr("Vector", "room_participants_invited_section") 
   }
-  /// Are you sure you want to leave the room?
+  /// Are you sure you want to leave the group?
   internal static var roomParticipantsLeavePromptMsg: String { 
     return VectorL10n.tr("Vector", "room_participants_leave_prompt_msg") 
   }
-  /// Leave room
+  /// Leave group
   internal static var roomParticipantsLeavePromptTitle: String { 
     return VectorL10n.tr("Vector", "room_participants_leave_prompt_title") 
   }
@@ -2126,7 +2126,7 @@ internal enum VectorL10n {
   internal static var roomParticipantsRemoveThirdPartyInviteMsg: String { 
     return VectorL10n.tr("Vector", "room_participants_remove_third_party_invite_msg") 
   }
-  /// No Identity Server is configured so you cannot start a chat with a contact using an email.
+  /// No identity server is configured so you cannot start a chat with a contact using an email.
   internal static var roomParticipantsStartNewChatErrorUsingUserEmailWithoutIdentityServer: String { 
     return VectorL10n.tr("Vector", "room_participants_start_new_chat_error_using_user_email_without_identity_server") 
   }
@@ -2138,7 +2138,7 @@ internal enum VectorL10n {
   internal static var roomParticipantsUnknown: String { 
     return VectorL10n.tr("Vector", "room_participants_unknown") 
   }
-  /// This room is a continuation of another conversation.
+  /// This group is a continuation of another conversation.
   internal static var roomPredecessorInformation: String { 
     return VectorL10n.tr("Vector", "room_predecessor_information") 
   }
@@ -2146,11 +2146,11 @@ internal enum VectorL10n {
   internal static var roomPredecessorLink: String { 
     return VectorL10n.tr("Vector", "room_predecessor_link") 
   }
-  /// You have been invited to join this room by %@
+  /// You have been invited to join this group by %@
   internal static func roomPreviewInvitationFormat(_ p1: String) -> String {
     return VectorL10n.tr("Vector", "room_preview_invitation_format", p1)
   }
-  /// This is a preview of this room. Room interactions have been disabled.
+  /// This is a preview of this group. Group interactions have been disabled.
   internal static var roomPreviewSubtitle: String { 
     return VectorL10n.tr("Vector", "room_preview_subtitle") 
   }
@@ -2158,7 +2158,7 @@ internal enum VectorL10n {
   internal static func roomPreviewTryJoinAnUnknownRoom(_ p1: String) -> String {
     return VectorL10n.tr("Vector", "room_preview_try_join_an_unknown_room", p1)
   }
-  /// a room
+  /// a group
   internal static var roomPreviewTryJoinAnUnknownRoomDefault: String { 
     return VectorL10n.tr("Vector", "room_preview_try_join_an_unknown_room_default") 
   }
@@ -2174,15 +2174,15 @@ internal enum VectorL10n {
   internal static var roomPromptResend: String { 
     return VectorL10n.tr("Vector", "room_prompt_resend") 
   }
-  /// ROOMS
+  /// GROUPS
   internal static var roomRecentsConversationsSection: String { 
     return VectorL10n.tr("Vector", "room_recents_conversations_section") 
   }
-  /// Create room
+  /// Create group
   internal static var roomRecentsCreateEmptyRoom: String { 
     return VectorL10n.tr("Vector", "room_recents_create_empty_room") 
   }
-  /// ROOM DIRECTORY
+  /// GROUP DIRECTORY
   internal static var roomRecentsDirectorySection: String { 
     return VectorL10n.tr("Vector", "room_recents_directory_section") 
   }
@@ -2198,15 +2198,15 @@ internal enum VectorL10n {
   internal static var roomRecentsInvitesSection: String { 
     return VectorL10n.tr("Vector", "room_recents_invites_section") 
   }
-  /// Join room
+  /// Join group
   internal static var roomRecentsJoinRoom: String { 
     return VectorL10n.tr("Vector", "room_recents_join_room") 
   }
-  /// Type a room id or a room alias
+  /// Type a group id or a group alias
   internal static var roomRecentsJoinRoomPrompt: String { 
     return VectorL10n.tr("Vector", "room_recents_join_room_prompt") 
   }
-  /// Join a room
+  /// Join a group
   internal static var roomRecentsJoinRoomTitle: String { 
     return VectorL10n.tr("Vector", "room_recents_join_room_title") 
   }
@@ -2214,7 +2214,7 @@ internal enum VectorL10n {
   internal static var roomRecentsLowPrioritySection: String { 
     return VectorL10n.tr("Vector", "room_recents_low_priority_section") 
   }
-  /// No rooms
+  /// No groups
   internal static var roomRecentsNoConversation: String { 
     return VectorL10n.tr("Vector", "room_recents_no_conversation") 
   }
@@ -2230,7 +2230,7 @@ internal enum VectorL10n {
   internal static var roomRecentsStartChatWith: String { 
     return VectorL10n.tr("Vector", "room_recents_start_chat_with") 
   }
-  /// This room has been replaced and is no longer active.
+  /// This group has been replaced and is no longer active.
   internal static var roomReplacementInformation: String { 
     return VectorL10n.tr("Vector", "room_replacement_information") 
   }
@@ -2282,7 +2282,7 @@ internal enum VectorL10n {
   internal static func roomTitleMultipleActiveMembers(_ p1: String, _ p2: String) -> String {
     return VectorL10n.tr("Vector", "room_title_multiple_active_members", p1, p2)
   }
-  /// New room
+  /// New group
   internal static var roomTitleNewRoom: String { 
     return VectorL10n.tr("Vector", "room_title_new_room") 
   }
@@ -2306,7 +2306,7 @@ internal enum VectorL10n {
   internal static func roomUnsentMessagesUnknownDevicesNotification(_ p1: String, _ p2: String) -> String {
     return VectorL10n.tr("Vector", "room_unsent_messages_unknown_devices_notification", p1, p2)
   }
-  /// End-to-end encryption is in beta and may not be reliable.\n\nYou should not yet trust it to secure data.\n\nDevices will not yet be able to decrypt history from before they joined the room.\n\nEncrypted messages will not be visible on clients that do not yet implement encryption.
+  /// End-to-end encryption is in beta and may not be reliable.\n\nYou should not yet trust it to secure data.\n\nDevices will not yet be able to decrypt history from before they joined the group.\n\nEncrypted messages will not be visible on clients that do not yet implement encryption.
   internal static var roomWarningAboutEncryption: String { 
     return VectorL10n.tr("Vector", "room_warning_about_encryption") 
   }
@@ -2342,7 +2342,7 @@ internal enum VectorL10n {
   internal static var searchPeoplePlaceholder: String { 
     return VectorL10n.tr("Vector", "search_people_placeholder") 
   }
-  /// Rooms
+  /// Groups
   internal static var searchRooms: String { 
     return VectorL10n.tr("Vector", "search_rooms") 
   }
@@ -2638,11 +2638,11 @@ internal enum VectorL10n {
   internal static var settingsLabsMessageReaction: String { 
     return VectorL10n.tr("Vector", "settings_labs_message_reaction") 
   }
-  /// Lazy load rooms members
+  /// Lazy load groups members
   internal static var settingsLabsRoomMembersLazyLoading: String { 
     return VectorL10n.tr("Vector", "settings_labs_room_members_lazy_loading") 
   }
-  /// Your homeserver does not support lazy loading of room members yet. Try later.
+  /// Your homeserver does not support lazy loading of group members yet. Try later.
   internal static var settingsLabsRoomMembersLazyLoadingErrorMessage: String { 
     return VectorL10n.tr("Vector", "settings_labs_room_members_lazy_loading_error_message") 
   }
@@ -2686,11 +2686,11 @@ internal enum VectorL10n {
   internal static var settingsPhoneNumber: String { 
     return VectorL10n.tr("Vector", "settings_phone_number") 
   }
-  /// Pin rooms with missed notifications
+  /// Pin groups with missed notifications
   internal static var settingsPinRoomsWithMissedNotif: String { 
     return VectorL10n.tr("Vector", "settings_pin_rooms_with_missed_notif") 
   }
-  /// Pin rooms with unread messages
+  /// Pin groups with unread messages
   internal static var settingsPinRoomsWithUnread: String { 
     return VectorL10n.tr("Vector", "settings_pin_rooms_with_unread") 
   }
@@ -2738,7 +2738,7 @@ internal enum VectorL10n {
   internal static var settingsSignOutConfirmation: String { 
     return VectorL10n.tr("Vector", "settings_sign_out_confirmation") 
   }
-  /// You will lose your end-to-end encryption keys. That means you will no longer be able to read old messages in encrypted rooms on this device.
+  /// You will lose your end-to-end encryption keys. That means you will no longer be able to read old messages in encrypted groups on this device.
   internal static var settingsSignOutE2eWarn: String { 
     return VectorL10n.tr("Vector", "settings_sign_out_e2e_warn") 
   }
@@ -2814,7 +2814,7 @@ internal enum VectorL10n {
   internal static var shareExtensionAuthPrompt: String { 
     return VectorL10n.tr("Vector", "share_extension_auth_prompt") 
   }
-  /// Failed to send. Check in the main app the encryption settings for this room
+  /// Failed to send. Check in the main app the encryption settings for this group
   internal static var shareExtensionFailedToEncrypt: String { 
     return VectorL10n.tr("Vector", "share_extension_failed_to_encrypt") 
   }
@@ -2870,7 +2870,7 @@ internal enum VectorL10n {
   internal static var start: String { 
     return VectorL10n.tr("Vector", "start") 
   }
-  /// Communicate, your way.\n\nA chat app, under your control and entirely flexible. Riot lets you communicate the way you want. Made for [matrix] - the standard for open, decentralised communication.\n\nGet a free matrix.org account, get your own server at https://modular.im, or use another Matrix server.\n\nWhy choose Riot.im?\n\nCOMPLETE COMMUNICATION: Build rooms around your teams, your friends, your community - however you like! Chat, share files, add widgets and make voice and video calls - all free of charge.\n\nPOWERFUL INTEGRATIONS: Use Riot.im with the tools you know and love. With Riot.im you can even chat with users and groups on other chat apps.\n\nPRIVATE AND SECURE: Keep your conversations secret. State of the art end-to-end encryption ensures that private communication stays private.\n\nOPEN, NOT CLOSED: Open source, and built on Matrix. Own your own data by hosting your own server, or selecting one you trust.\n\nEVERYWHERE YOU ARE: Stay in touch wherever you are with fully synchronised message history across all your devices and online at https://riot.im.
+  /// Communicate, your way.\n\nA chat app, under your control and entirely flexible. Riot lets you communicate the way you want. Made for [matrix] - the standard for open, decentralised communication.\n\nGet a free matrix.org account, get your own server at https://modular.im, or use another Matrix server.\n\nWhy choose Riot.im?\n\nCOMPLETE COMMUNICATION: Build groups around your teams, your friends, your community - however you like! Chat, share files, add widgets and make voice and video calls - all free of charge.\n\nPOWERFUL INTEGRATIONS: Use Riot.im with the tools you know and love. With Riot.im you can even chat with users and groups on other chat apps.\n\nPRIVATE AND SECURE: Keep your conversations secret. State of the art end-to-end encryption ensures that private communication stays private.\n\nOPEN, NOT CLOSED: Open source, and built on Matrix. Own your own data by hosting your own server, or selecting one you trust.\n\nEVERYWHERE YOU ARE: Stay in touch wherever you are with fully synchronised message history across all your devices and online at https://riot.im.
   internal static var storeFullDescription: String { 
     return VectorL10n.tr("Vector", "store_full_description") 
   }
@@ -2894,7 +2894,7 @@ internal enum VectorL10n {
   internal static var titlePeople: String { 
     return VectorL10n.tr("Vector", "title_people") 
   }
-  /// Rooms
+  /// Groups
   internal static var titleRooms: String { 
     return VectorL10n.tr("Vector", "title_rooms") 
   }
@@ -2902,11 +2902,11 @@ internal enum VectorL10n {
   internal static var today: String { 
     return VectorL10n.tr("Vector", "today") 
   }
-  /// This room contains unknown devices which have not been verified.\nThis means there is no guarantee that the devices belong to the users they claim to.\nWe recommend you go through the verification process for each device before continuing, but you can resend the message without verifying if you prefer.
+  /// This group contains unknown devices which have not been verified.\nThis means there is no guarantee that the devices belong to the users they claim to.\nWe recommend you go through the verification process for each device before continuing, but you can resend the message without verifying if you prefer.
   internal static var unknownDevicesAlert: String { 
     return VectorL10n.tr("Vector", "unknown_devices_alert") 
   }
-  /// Room contains unknown devices
+  /// Group contains unknown devices
   internal static var unknownDevicesAlertTitle: String { 
     return VectorL10n.tr("Vector", "unknown_devices_alert_title") 
   }
@@ -2954,7 +2954,7 @@ internal enum VectorL10n {
   internal static var widgetIntegrationFailedToSendRequest: String { 
     return VectorL10n.tr("Vector", "widget_integration_failed_to_send_request") 
   }
-  /// Missing room_id in request.
+  /// Missing group_id in request.
   internal static var widgetIntegrationMissingRoomId: String { 
     return VectorL10n.tr("Vector", "widget_integration_missing_room_id") 
   }
@@ -2962,7 +2962,7 @@ internal enum VectorL10n {
   internal static var widgetIntegrationMissingUserId: String { 
     return VectorL10n.tr("Vector", "widget_integration_missing_user_id") 
   }
-  /// You are not in this room.
+  /// You are not in this group.
   internal static var widgetIntegrationMustBeInRoom: String { 
     return VectorL10n.tr("Vector", "widget_integration_must_be_in_room") 
   }
@@ -2970,7 +2970,7 @@ internal enum VectorL10n {
   internal static var widgetIntegrationNeedToBeAbleToInvite: String { 
     return VectorL10n.tr("Vector", "widget_integration_need_to_be_able_to_invite") 
   }
-  /// You do not have permission to do that in this room.
+  /// You do not have permission to do that in this group.
   internal static var widgetIntegrationNoPermissionInRoom: String { 
     return VectorL10n.tr("Vector", "widget_integration_no_permission_in_room") 
   }
@@ -2978,11 +2978,11 @@ internal enum VectorL10n {
   internal static var widgetIntegrationPositivePowerLevel: String { 
     return VectorL10n.tr("Vector", "widget_integration_positive_power_level") 
   }
-  /// This room is not recognised.
+  /// This group is not recognised.
   internal static var widgetIntegrationRoomNotRecognised: String { 
     return VectorL10n.tr("Vector", "widget_integration_room_not_recognised") 
   }
-  /// Room %@ is not visible.
+  /// Group %@ is not visible.
   internal static func widgetIntegrationRoomNotVisible(_ p1: String) -> String {
     return VectorL10n.tr("Vector", "widget_integration_room_not_visible", p1)
   }
@@ -2998,7 +2998,7 @@ internal enum VectorL10n {
   internal static var widgetNoIntegrationsServerConfigured: String { 
     return VectorL10n.tr("Vector", "widget_no_integrations_server_configured") 
   }
-  /// You need permission to manage widgets in this room
+  /// You need permission to manage widgets in this group
   internal static var widgetNoPowerToManage: String { 
     return VectorL10n.tr("Vector", "widget_no_power_to_manage") 
   }

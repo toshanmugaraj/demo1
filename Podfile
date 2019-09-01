@@ -7,7 +7,7 @@ use_frameworks!
 
 # Different flavours of pods to MatrixKit
 # The current MatrixKit pod version
-$matrixKitVersion = '0.10.2'
+$matrixKitVersion = 'develop'
 
 # The develop branch version
 #$matrixKitVersion = 'develop'
@@ -32,6 +32,7 @@ def import_MatrixKit
             pod 'MatrixKit', :git => 'https://github.com/matrix-org/matrix-ios-kit.git', :branch => 'develop'
         else
             pod 'MatrixKit', $matrixKitVersion
+            pod 'MatrixSDK'
             pod 'MatrixSDK/SwiftSupport'
             pod 'MatrixSDK/JingleCallStack'
         end
@@ -52,6 +53,7 @@ def import_MatrixKitAppExtension
         else
             pod 'MatrixKit/AppExtension', $matrixKitVersion
             pod 'MatrixSDK/SwiftSupport'
+            pod 'MatrixSDK'
         end
     end 
 end

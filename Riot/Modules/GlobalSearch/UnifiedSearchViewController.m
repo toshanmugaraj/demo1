@@ -71,11 +71,11 @@
     NSMutableArray* viewControllers = [[NSMutableArray alloc] init];
     NSMutableArray* titles = [[NSMutableArray alloc] init];
 
-    [titles addObject: NSLocalizedStringFromTable(@"search_rooms", @"Vector", nil)];
-    recentsViewController = [RecentsViewController recentListViewController];
-    recentsViewController.enableSearchBar = NO;
-    recentsViewController.screenName = @"UnifiedSearchRooms";
-    [viewControllers addObject:recentsViewController];
+//    [titles addObject: NSLocalizedStringFromTable(@"search_rooms", @"Vector", nil)];
+//    recentsViewController = [RecentsViewController recentListViewController];
+//    recentsViewController.enableSearchBar = NO;
+//    recentsViewController.screenName = @"UnifiedSearchRooms";
+//    [viewControllers addObject:recentsViewController];
 
     [titles addObject: NSLocalizedStringFromTable(@"search_messages", @"Vector", nil)];
     messagesSearchViewController = [HomeMessagesSearchViewController searchViewController];

@@ -78,7 +78,7 @@
         _areSectionsShrinkable = NO;
         shrinkedSectionsBitMask = 0;
         
-        hideNonMatrixEnabledContacts = NO;
+        hideNonMatrixEnabledContacts = YES;
         
         _displaySearchInputInContactsList = NO;
         
@@ -834,6 +834,7 @@
     
     if (section == filteredLocalContactsSection && !(shrinkedSectionsBitMask & CONTACTSDATASOURCE_LOCALCONTACTS_BITWISE))
     {
+        /*
         NSLayoutConstraint *leadingConstraint, *trailingConstraint, *topConstraint, *bottomConstraint;
         NSLayoutConstraint *widthConstraint, *heightConstraint, *centerYConstraint;
         
@@ -1008,6 +1009,7 @@
                                                          constant:0];
         
         [NSLayoutConstraint activateConstraints:@[leadingConstraint, widthConstraint, topConstraint, bottomConstraint]];
+         */
     }
     
     return sectionHeader;
@@ -1056,8 +1058,9 @@
 - (IBAction)onCheckBoxTap:(UITapGestureRecognizer*)sender
 {
     // Update local contacts filter
+//    hideNonMatrixEnabledContacts = !hideNonMatrixEnabledContacts;
     hideNonMatrixEnabledContacts = !hideNonMatrixEnabledContacts;
-    
+
     // Check whether a search is in progress
     if (searchProcessingCount)
     {
